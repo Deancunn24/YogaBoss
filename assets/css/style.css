@@ -1,3 +1,6 @@
+/*google font*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+
 /* used to override default style by brower*/
 *{
     padding:0;
@@ -11,6 +14,7 @@ body{
     display:flex;
     flex-direction:column;
     color:#3a3a3a;
+    font-family: Oswald, Open Sans;
 }
 header{
     background-color: lightcoral;
