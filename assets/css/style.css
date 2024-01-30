@@ -14,10 +14,13 @@ body{
     display:flex;
     flex-direction:column;
     color:#3a3a3a;
-    font-family: Oswald, Open Sans;
+    font-family: 'Oswald', 'Open-Sans';
 }
 header{
     background-color: lightcoral;
+}
+h1{
+    font-family: 'Oswald';
 }
 
 main {
