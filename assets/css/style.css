@@ -103,7 +103,41 @@ main {
 #cover-text >h2, #cover-text >h3 {
     color:#3a3a3a
 }
+/* Styling for the yoga poses section */
+#about {
+    padding: 20px;
+}
 
+.yoga-poses {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.yoga-pose {
+    flex-basis: calc(33.33% - 20px);
+    /* Adjust according to your layout */
+    margin-bottom: 20px;
+}
+
+/* Styling for individual yoga poses */
+.yoga-pose h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.yoga-pose img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.yoga-pose p {
+    margin-top: 10px;
+    font-size: 14px;
+}
 /* Video container styles */
 .video-container {
     position: relative;
@@ -176,42 +210,96 @@ main {
         padding: 5%;
         color: 3a3a3a;
     }
+/* Base styles */
+#about {
+    padding: 20px;
+}
 
-/*Media: tablets + (768px +)*/
-@media screen and (min-width: 768px){
-    /*header*/
-    nav{
-        display:block;
-        position:relative;
-        box-shadow:none;
-        width:fit-content;
-        padding-right:1rem;
-    }
+.yoga-poses {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
 
-    #menu{
-        display: flex;
-    }
-    #menu >li {
-        padding-left:1rem;
-    }
-    .nav-toggle-label {
-        display:none;
-    }
+.yoga-pose {
+    flex-basis: calc(33.33% - 20px);
+    /* Adjust according to your layout */
+    margin-bottom: 20px;
+}
 
-    #logo{
-        font-size:280%;
-        line-height:75px;
-        margin:0 0.5rem;
-    }
+.yoga-pose h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
 
-    main{
-        margin-top:79px;
-    }
+.yoga-pose img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-    /*media change - laptops, desktops, 992px +*/
-    @media screen and (min-width: 992px){
-        #menu a:hover{
-            border-bottom: 1px solid #3a3a3a;
-        }
-    }
+.yoga-pose p {
+    margin-top: 10px;
+    font-size: 14px;
+}
 
+/* Responsive styles */
+@media only screen and (max-width: 767px) {
+    .yoga-poses {
+        flex-direction: column;
+        align-items: center;
+    }
+    .yoga-pose {
+        flex-basis: 100%;
+    }
+}
+
+/* Media query for tablets (768px and above) */
+@media screen and (min-width: 768px) {
+    .yoga-poses {
+        justify-content: space-between;
+    }
+    .yoga-pose {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+/* Media query for laptops and wider screens (992px and above) */
+@media screen and (min-width: 992px) {
+    .yoga-pose {
+        flex-basis: calc(33% - 20px);
+    }
+                /*header*/
+                nav {
+                    display: block;
+                    position: relative;
+                    box-shadow: none;
+                    width: fit-content;
+                    padding-right: 1rem;
+                }
+        
+                #menu {
+                    display: flex;
+                }
+        
+                #menu>li {
+                    padding-left: 1rem;
+                }
+        
+                .nav-toggle-label {
+                    display: none;
+                }
+        
+                #logo {
+                    font-size: 280%;
+                    line-height: 75px;
+                    margin: 0 0.5rem;
+                }
+        
+                main {
+                    margin-top: 79px;
+                }
+                #menu a:hover {
+                border-bottom: 1px solid #3a3a3a;}
+                
