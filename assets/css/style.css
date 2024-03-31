@@ -25,7 +25,7 @@ h1, h2, h3 {
 
 header{
     background-color:#ffffff;
-    padding: o 1rem;
+    padding: 0 1rem;
     position: fixed;
     z-index: 99;
     Width:100%;
@@ -208,7 +208,7 @@ main {
     #social-networks i {
         font-size: 160%;
         padding: 5%;
-        color: 3a3a3a;
+        color: #3a3a3a;
     }
 /* Base styles */
 #about {
@@ -301,5 +301,5 @@ main {
                     margin-top: 79px;
                 }
                 #menu a:hover {
-                border-bottom: 1px solid #3a3a3a;}
-                
+                    border-bottom: 1px solid #3a3a3a;}
+                }
