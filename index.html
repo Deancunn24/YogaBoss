@@ -24,229 +24,6 @@
 
     <!--stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-      /* Reset CSS */
-      * {
-          padding: 0;
-          margin: 0;
-          box-sizing: border-box;
-      }
-
-      /* General styles */
-      body {
-          min-height: 100vh;
-          display: flex;
-          flex-direction: column;
-          color: #3a3a3a;
-          font-family: 'Oswald', sans-serif;
-      }
-
-      h1, h2, h3 {
-          font-family: 'Oswald', sans-serif;
-          text-transform: uppercase;
-          letter-spacing: 2px;
-          color: #252525;
-      }
-
-      header {
-          background-color: #ffffff;
-          padding: 0 1rem;
-          position: fixed;
-          z-index: 99;
-          width: 100%;
-          box-shadow: 0 2px 2px #3a3a3a;
-          display: flex;
-          justify-content: space-between;
-          align-items: baseline;
-      }
-
-      header a {
-          text-decoration: none;
-          color: inherit;
-      }
-
-      #menu {
-          font-size: 110%;
-          letter-spacing: 4px;
-          list-style-type: none;
-      }
-
-      #menu > li {
-          margin-bottom: 1em;
-      }
-
-      .active {
-          border-bottom: 1px solid #3a3a3a;
-      }
-
-      /* Nav dropdown toggle */
-      nav {
-          position: absolute;
-          background-color: #ffffff;
-          width: 100%;
-          left: 0;
-          padding: 0 1rem;
-          box-shadow: 0 2px 2px #3a3a3a;
-          display: none;
-          top: 100%;
-      }
-
-      /* Nav toggle */
-      #nav-toggle:checked ~ nav {
-          display: block;
-      }
-
-      #nav-toggle {
-          display: none;
-      }
-
-      .nav-toggle-label {
-          font-size: 2rem;
-      }
-
-      main {
-          background-color: #c9f9c9;
-          flex: 1 0 auto;
-          margin-top: 47px;
-          padding: 20px;
-      }
-
-      /* Hero section */
-      #hero {
-          height: 600px;
-          width: 100%;
-          background: url("assets/images/pexels-andrea-piacquadio-866023.jpg") no-repeat center center/cover;
-          position: relative;
-      }
-
-      #cover-text {
-          background-color: rgba(175, 249, 176, 0.57);
-          font-size: 130%;
-          position: absolute;
-          bottom: 30px;
-          width: 70%;
-          min-height: 100px;
-          padding: 10px;
-      }
-
-      #cover-text > h2,
-      #cover-text > h3 {
-          color: #3a3a3a;
-      }
-
-      /* Styling for the yoga poses section */
-      .yoga-poses {
-          display: flex;
-          flex-wrap: wrap;
-          margin-top: 20px;
-      }
-
-      .yoga-pose {
-          flex-basis: calc(33.33% - 20px);
-          margin-bottom: 20px;
-      }
-
-      /* Styling for individual yoga poses */
-      .yoga-pose h4 {
-          font-size: 18px;
-          margin-bottom: 10px;
-      }
-
-      .yoga-pose img {
-          width: 100%;
-          height: auto;
-          border-radius: 8px;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      }
-
-      .yoga-pose p {
-          margin-top: 10px;
-          font-size: 14px;
-      }
-
-      /* Video container styles */
-      .video-container {
-          position: relative;
-          width: 75%;
-          padding-bottom: 56.25%; /* 16:9 aspect ratio */
-          margin: 20px auto;
-      }
-
-      .video-container iframe {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-      }
-
-      /* Styling for the signup section */
-      #signup {
-          background-color: #f9f9f9;
-          padding: 20px;
-          margin-top: 20px;
-          border-radius: 8px;
-          max-width: 400px;
-          margin-left: auto;
-          margin-right: auto;
-      }
-
-      /* Styling for the signup form */
-      #signup form {
-          display: flex;
-          flex-direction: column;
-      }
-
-      #signup form label {
-          font-weight: bold;
-          margin-bottom: 8px;
-      }
-
-      #signup form input[type="email"] {
-          padding: 10px;
-          margin-bottom: 16px;
-          border-radius: 4px;
-          border: 1px solid #ccc;
-      }
-
-      #signup form button {
-          padding: 10px 20px;
-          background-color: #4df076;
-          color: #fff;
-          border: none;
-          border-radius: 4px;
-          cursor: pointer;
-      }
-
-      #signup form button:hover {
-          background-color: #3cdb64;
-      }
-
-      /* Footer */
-      footer {
-          background-color: rgb(196, 244, 161);
-          padding: 20px 0;
-          text-align: center;
-      }
-
-      #social-networks {
-          display: flex;
-          justify-content: space-evenly;
-          list-style-type: none;
-          padding: 0;
-      }
-
-      #social-networks a {
-          text-decoration: none;
-          color: inherit;
-      }
-
-      #social-networks i {
-          font-size: 24px;
-          padding: 5%;
-          color: #3a3a3a;
-      }
-  </style>
   </head>
   <body>
     <header>
@@ -281,7 +58,7 @@
         
         <div class="yoga-poses">
             <div class="yoga-pose">
-                <h4>Extended Side Angle (Utthita Parvakonasana)</h4>
+                <h3>Extended Side Angle (Utthita Parvakonasana)</h3>
                 <img src="assets/images/pexels-elina-fairytale-3822167.jpg"
                     alt="Extended Side Angle">
                 <p>One modification of Extended Side Angle Pose is to bring your forearm to your thigh instead of placing your hand on the
@@ -293,7 +70,7 @@
             </div>
         
             <div class="yoga-pose">
-                <h4>Downward-Facing Dog (Adho Mukha Svanasana)</h4>
+                <h3>Downward-Facing Dog (Adho Mukha Svanasana)</h3>
                 <img src="assets/images/pexels-elina-fairytale-3822118.jpg"
                     alt="Downward-Facing Dog">
                 <p>Downward Facing Dog goes hand in hand with yoga, but just because you've heard of this pose doesn't mean it's easy to
@@ -307,7 +84,7 @@
             </div>
         
             <div class="yoga-pose">
-                <h4>Warrior I (Virabhadrasana I)</h4>
+                <h3>Warrior I (Virabhadrasana I)</h3>
                 <img src="assets/images/pexels-elina-fairytale-3822170.jpg"
                     alt="Warrior I">
                 <p>The critical thing to remember in Warrior I is that the hips face forward. Think of your hip points as headlights—they
@@ -318,7 +95,7 @@
       <section id="benefits-video">
         <h2>Benefits of Yoga</h2>
         <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/_8kV4FHSdNA" ></iframe>
+        <iframe title="benefits of yoga" src="https://www.youtube.com/embed/_8kV4FHSdNA" ></iframe>
         </div>
       </section>
     <section id="signup">
